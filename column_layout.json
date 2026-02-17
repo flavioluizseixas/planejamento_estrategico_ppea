@@ -1,0 +1,103 @@
+{
+  "__global__": {
+    "labels": {
+      "_selected": "Selecionado"
+    }
+  },
+  "okrs": {
+    "order": [
+      "_selected",
+      "OKR_ID",
+      "Eixo_CAPES",
+      "Objetivo_OKR"
+    ],
+    "width": {
+      "_selected": "small",
+      "OKR_ID": 90,
+      "Eixo_CAPES": 140,
+      "Objetivo_OKR": 700
+    },
+    "labels": {
+      "OKR_ID": "OKR",
+      "Eixo_CAPES": "Eixo CAPES",
+      "Objetivo_OKR": "Objetivo"
+    }
+  },
+  "krs": {
+    "order": [
+      "_selected",
+      "KR_ID",
+      "Resultado-chave",
+      "Meta_2028",
+      "Frequência"
+    ],
+    "width": {
+      "_selected": "small",
+      "KR_ID": 90,
+      "Resultado-chave": 620,
+      "Meta_2028": 120,
+      "Frequência": 120
+    },
+    "labels": {
+      "KR_ID": "KR",
+      "OKR_ID": "OKR",
+      "Resultado-chave": "Resultado-chave",
+      "Meta_2028": "Meta 2028",
+      "Frequência": "Frequência"
+    }
+  },
+  "acoes": {
+    "order": [
+      "_selected",
+      "ID",
+      "EIXO",
+      "O QUÊ?",
+      "STATUS",
+      "OKR_USED"
+    ],
+    "width": {
+      "_selected": "small",
+      "ID": 90,
+      "EIXO": 140,
+      "O QUÊ?": 520,
+      "STATUS": 140,
+      "OKR_USED": 110,
+      "KR_ID_USADA": 120
+    },
+    "labels": {
+      "ID": "ID",
+      "EIXO": "Eixo",
+      "O QUÊ?": "Ação",
+      "STATUS": "Status",
+      "OKR_USED": "OKR"
+    }
+  },
+  "kpis": {
+    "order": [
+      "_selected",
+      "KPI_ID",
+      "KPI",
+      "Unidade",
+      "Frequência",
+      "Fonte",
+      "OKRs_relacionadas"
+    ],
+    "width": {
+      "_selected": "small",
+      "KPI_ID": 90,
+      "KPI": 320,
+      "OKRs_relacionadas": 140,
+      "Unidade": 120,
+      "Frequência": 120,
+      "Fonte": 240
+    },
+    "labels": {
+      "KPI_ID": "KPI",
+      "KPI": "Indicador",
+      "OKRs_relacionadas": "OKR",
+      "Unidade": "Unidade",
+      "Frequência": "Frequência",
+      "Fonte": "Fonte"
+    }
+  }
+}
