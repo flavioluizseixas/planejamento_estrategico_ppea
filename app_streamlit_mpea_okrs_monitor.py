@@ -4,6 +4,29 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 
+import hmac
+
+def check_password():
+    if "auth_ok" not in st.session_state:
+        st.session_state.auth_ok = False
+
+    if st.session_state.auth_ok:
+        return True
+
+    st.title("Acesso restrito")
+    st.markdown("Este painel é de uso interno do programa.")
+
+    pwd = st.text_input("Senha", type="password")
+
+    expected = st.secrets.get("APP_PASSWORD", "")
+    if pwd and expected and hmac.compare_digest(pwd, expected):
+        st.session_state.auth_ok = True
+        st.rerun()
+
+    st.stop()
+
+check_password()
+
 st.set_page_config(page_title="Painel OKRs/KRs/KPIs — MPEA", layout="wide")
 
 FILE_DEFAULT = "data/MPEA_KRs_KPIs_StreamlitBase.xlsx"
